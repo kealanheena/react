@@ -18,5 +18,6 @@ This is a repository where I will learn and practice react by working through a 
 - Class Components Practice
 
 ### Section 3: Styling in React
+- Styling Stateless Functional Components
 
 
