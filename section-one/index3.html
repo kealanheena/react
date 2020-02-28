@@ -1,0 +1,39 @@
+<!-- Insert Boiler Plate Code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- REACT LIBRARY -->
+  <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+  <!-- REACT DOM LIBRARY -->
+  <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+  <!-- BABEL LIBRARY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+  <title>Let's React!</title>
+</head>
+<body>
+  <!-- Designated Location To Insert React Content -->
+<div id="app">React has not rendered yet</div>
+
+  <!-- JavaScript -->
+  <script type="text/babel">
+
+    //  VARIABLE FOR JSX
+    var hello = <h1>Hello World</h1>
+
+    // VARIABLE FOR LOCATION
+    var destination = document.getElementById("app")
+
+    // Render React To The DOM - Will Accept Two Arguments (React What, React Where)
+    ReactDOM.render(
+      // React What -  Variable for JSX
+      hello,
+      // React Where - Variable for Div With ID of "App"
+      destination
+    );
+
+  </script>
+</body>
+</html>
