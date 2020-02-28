@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stateless Functional Components</title>
-    <!-- REACT LIBRARY -->
+  <!-- REACT LIBRARY -->
   <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
   <!-- REACT DOM LIBRARY -->
   <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
@@ -25,9 +25,63 @@
       );
     }
 
+    // CHALLENGE
+    // CREATE A COMPONENT FOR ALL THE COLORS OF THE SPECTRUM AND RENDER THEM
+      // TO THE DOM WITHIN ONE PARENT DIV
+
+      var Red = function() {
+        return(
+          <h1>Red,</h1>
+        );
+      }
+
+      var Orange = function() {
+        return(
+          <h1>Orange,</h1>
+        );
+      }
+
+      var Yellow = function() {
+        return(
+          <h1>Yellow,</h1>
+        );
+      }
+
+      var Green = function() {
+        return(
+          <h1>Green,</h1>
+        );
+      }
+
+      var Blue = function() {
+        return(
+          <h1>Blue,</h1>
+        );
+      }
+
+      var Indigo = function() {
+        return(
+          <h1>Indigo,</h1>
+        );
+      }
+
+      var Violet = function() {
+        return(
+          <h1>Violet</h1>
+        );
+      }
+
     ReactDOM.render(
       // REACT WHAT
-      <ColorSpectrum/>,
+      <div>
+        <Red/>
+        <Orange/>
+        <Yellow/>
+        <Green/>
+        <Blue/>
+        <Indigo/>
+        <Violet/>
+      </div>,
       document.getElementById("app")
     );
 
