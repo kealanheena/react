@@ -22,7 +22,15 @@ This is a repository where I will learn and practice react by working through a 
 - Styling Within Component
 - Styling Class Components
 
-### Capstone Project - FriendLy
+### Section 4: Capstone Project - FriendLy
 - Building Your First Complex Component
-- 
+- Setting Up The Project
+- Building Our Components
+- Styling Our Components Part One & Two
+
+#### Capstone Project One
+
+This project was a single html file where I used React to create a profile that included a picture, name and a like, share and connect button(for aesthetics only) to get prctice with creating compents and styling them in React.
+
+
 
