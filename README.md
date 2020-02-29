@@ -22,3 +22,7 @@ This is a repository where I will learn and practice react by working through a 
 - Styling Within Component
 - Styling Class Components
 
+### Capstone Project - FriendLy
+- Building Your First Complex Component
+- 
+
