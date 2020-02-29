@@ -32,5 +32,9 @@ This is a repository where I will learn and practice react by working through a 
 
 This project was a single html file where I used React to create a profile that included a picture, name and a like, share and connect button(for aesthetics only) to get prctice with creating compents and styling them in React.
 
-
+### Section 4.5: JavaScript Review - Objects
+- Object Literal Notation
+- Object Literal Notation Lab
+- Accessing Values With Dot & Bracket Notation
+- Accessing Values With Dot & Bracket Notation Lab
 
