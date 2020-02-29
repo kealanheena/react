@@ -19,5 +19,5 @@ This is a repository where I will learn and practice react by working through a 
 
 ### Section 3: Styling in React
 - Styling Stateless Functional Components
-
+- Styling Within Component
 
