@@ -38,3 +38,9 @@ This project was a single html file where I used React to create a profile that 
 - Accessing Values With Dot & Bracket Notation
 - Accessing Values With Dot & Bracket Notation Lab
 
+### Section 5: Props
+- Props Part 1 - Stateless Functional Component
+- Props Part 2 - Class Components
+- Props Part 3 - Color Spectrum Refactor
+- Codepen Challenges 1, 2, 3, 4 & 5
+- Capstone Project

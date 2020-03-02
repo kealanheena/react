@@ -11,7 +11,7 @@
   <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
   <!-- BABEL LIBRARY -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
-  <title>Boiler Plate Code</title>
+  <title>Class Components Props</title>
 </head>
 <body>
   <!-- Designated Location To Insert React Content -->
@@ -19,12 +19,29 @@
 
   <!-- JavaScript -->
   <script type="text/babel">
+
+    class PersonGreeting extends React.Component {
+      render() {
+        var personStyle = {
+          height: 300,
+          width: 300,
+          backgroundColor: this.props.color
+        }
+        return(
+          <div style={personStyle}>
+            Hello, {this.props.name}!
+          </div>
+        );
+      }
+    }
     
-    // Render React To The DOM - Will Accept Two Arguments (React What, React Where)
     ReactDOM.render(
-      // React What - JSX
-      <h1>Hello World!</h1>,
-      // React Where - Div With ID of "App"
+      <div>
+      <PersonGreeting color="tomato" name="Jimmy Joe"/>
+      <PersonGreeting color="blue" name="Billy Joe"/>
+      <PersonGreeting color="pink" name="Jilly Joe"/>
+      </div>
+      ,
       document.getElementById("app")
     );
 

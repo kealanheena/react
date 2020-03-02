@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- REACT LIBRARY -->
+  <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+  <!-- REACT DOM LIBRARY -->
+  <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+  <!-- BABEL LIBRARY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+  <!--  Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <title>FriendLy</title>
+</head>
+<body>
+  <div id="app">React has not rendered yet</div>
+
+  <script type="text/babel">
+
+  // FriendLy Complex Component
+  function FriendLy(props) {
+    var friendlyStyle = {
+      display: "inline-block",
+      margin: 20,
+      height: 300,
+      width: 200,
+      padding: 0,
+      backgroundColor: "#FFF",
+      WebkitFilter: "drop-shadow(0px 0px 5px #555)",
+      filter: "drop-shadow(0px 0px 5px #555)"
+    }
+    return(
+      <div style={friendlyStyle}>
+        <Avatar avatarURL={props.avatarURL}/>
+        <UserName name={props.name}/>
+        <GetConnected/>
+      </div>
+    );
+  }
+
+  // Avatar Component
+  function Avatar(props) {
+    var avatarStyle = {
+      marginLeft: 27,
+      marginTop: 20,
+      width: 150,
+      height: 150,
+      borderRadius: "50%"
+    }
+    return(
+      <img src={props.avatarURL} alt="profile picture" style={avatarStyle}/>
+    );
+  }
+
+  // UserName Component
+  function UserName(props) {
+    var nameStyle={
+      textAlign: "center",
+      fontSize: 24,
+      fontFamily: "Arial, Helvetica, sans-serif",
+      margin: 20
+    }
+    return(
+      <h1 style={nameStyle}>{props.name}</h1>
+    );
+  }
+
+  // GetConnected Complex Component
+  function GetConnected() {
+    var getConnectedStyle = {
+      marginLeft: 15
+    }
+    return(
+      <div style={getConnectedStyle}>
+        <Like/>
+        <Share/>
+        <Add/>
+      </div>
+    );
+  }
+
+    var iconStyle = {
+      margin: 20
+    }
+
+    // Like Component
+    function Like() {
+      return(
+          <i className="far fa-thumbs-up" style={iconStyle}></i>
+      );
+    }
+
+    // Share Component
+    function Share() {
+      return(
+        <i className="fas fa-share" style={iconStyle}></i>
+      );
+    }
+
+    // Add Component
+    function Add() {
+      return(
+        <i className="fas fa-user-plus" style={iconStyle}></i>
+      )
+    }
+
+    //Challenge - Mass produce individual FriendLy crads using props
+    // Challenge 1 - Use props to pass the name of the person from ReactDOM.render()
+    //               method to parent FriendLy component to child UserName component
+    // Challenge 2 - Use props to pass the image URL from ReactDOM.render()
+    //               method to parent FriendLy component to child Avatar component
+    // Challenge 3 - Mass produce individual FriendLy cards by providing props and
+    //               values in our ReactDOM.render() method
+
+    ReactDOM.render(
+      <div>
+        <FriendLy
+        name="Kealan Heena"
+        avatarURL="./img/profile_pic.png"/>
+        <FriendLy
+        name="Bulbasaur"
+        avatarURL="https://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/250px-001Bulbasaur.png"/>
+        <FriendLy
+        name="Charmander"
+        avatarURL="https://cdn.bulbagarden.net/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png"/>
+        <FriendLy
+        name="Squirtle"
+        avatarURL="https://cdn.bulbagarden.net/upload/thumb/3/39/007Squirtle.png/250px-007Squirtle.png"/>
+        <FriendLy
+        name="Caterpie"
+        avatarURL="https://cdn.bulbagarden.net/upload/thumb/5/5d/010Caterpie.png/250px-010Caterpie.png"/>
+        <FriendLy
+        name="Weedle"
+        avatarURL="https://cdn.bulbagarden.net/upload/thumb/d/df/013Weedle.png/250px-013Weedle.png"/>
+        <FriendLy
+        name="Pidgey"
+        avatarURL="https://cdn.bulbagarden.net/upload/thumb/5/55/016Pidgey.png/250px-016Pidgey.png"/>
+        <FriendLy
+        name="Rattata"
+        avatarURL="https://cdn.bulbagarden.net/upload/thumb/4/46/019Rattata.png/250px-019Rattata.png"/>
+        <FriendLy
+        name="Spearow"
+        avatarURL="https://cdn.bulbagarden.net/upload/thumb/8/8b/021Spearow.png/250px-021Spearow.png"/>
+        <FriendLy
+        name="Ekans"
+        avatarURL="https://cdn.bulbagarden.net/upload/thumb/f/fa/023Ekans.png/250px-023Ekans.png"/>
+        <FriendLy
+        name="Pikachu"
+        avatarURL="https://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png"/>
+        <FriendLy
+        name="Sandshrew"
+        avatarURL="https://cdn.bulbagarden.net/upload/thumb/9/9e/027Sandshrew.png/250px-027Sandshrew.png"/>
+        <FriendLy
+        name="Nidoran♀"
+        avatarURL="https://cdn.bulbagarden.net/upload/thumb/8/81/029Nidoran.png/250px-029Nidoran.png"/>
+        <FriendLy
+        name="Nidoran♂"
+        avatarURL="https://cdn.bulbagarden.net/upload/thumb/4/4a/032Nidoran.png/250px-032Nidoran.png"/>
+      </div>,
+      document.getElementById("app")
+    );
+
+  </script>
+</body>
+</html>
