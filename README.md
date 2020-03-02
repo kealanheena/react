@@ -43,4 +43,13 @@ This project was a single html file where I used React to create a profile that 
 - Props Part 2 - Class Components
 - Props Part 3 - Color Spectrum Refactor
 - Codepen Challenges 1, 2, 3, 4 & 5
-- Capstone Project
+
+#### Capstone Project Update
+
+Updating the Capstone Project to have multiple profiles using props.
+
+### Section 6: Functional Programming
+- Filter
+- Filter Lab
+- Map
+- Map Lab
