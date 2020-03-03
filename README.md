@@ -48,8 +48,15 @@ This project was a single html file where I used React to create a profile that 
 
 Updating the Capstone Project to have multiple profiles using props.
 
-### Section 6: Functional Programming
+### Section 5.5: Functional Programming
 - Filter
 - Filter Lab
 - Map
 - Map Lab
+
+### Section 6: Iterating Through Lists
+- Iterating Through Lists Part 1 & 2
+- Filter & Map Method On An Array
+- Rendering Two Filtered and Transformed Lists To The DOM
+- Codepen Challenge 1 & 2
+- Color Spectrum Refactor
