@@ -61,6 +61,8 @@ Updating the Capstone Project to have multiple profiles using props.
 - Codepen Challenge 1 & 2
 - Color Spectrum Refactor
 
-### Section 7: Capstone Project One - Refactor
+### Capstone Project One - Refactor
 - FriendLy App Refactor With Map Method
 - FriendLy - Filter & Map Two Lists To The DOM
+
+
