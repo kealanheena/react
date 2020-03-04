@@ -80,3 +80,5 @@ Updating the Capstone Project to have multiple profiles using props.
 
 ### Section 9: Ajax Requests & Lifecycle Methods
 - Ajax Requests & The Fetch API
+
+<img src="https://udemy-certificate.s3.amazonaws.com/image/UC-a5081c73-d63d-4a15-b2bf-837094958dee.jpg">
