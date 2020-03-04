@@ -77,3 +77,6 @@ Updating the Capstone Project to have multiple profiles using props.
 - Guess My Age - Intro To React State
 - Meal Voter
 - React Forms
+
+### Section 9: Ajax Requests & Lifecycle Methods
+- 
