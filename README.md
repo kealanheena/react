@@ -65,4 +65,7 @@ Updating the Capstone Project to have multiple profiles using props.
 - FriendLy App Refactor With Map Method
 - FriendLy - Filter & Map Two Lists To The DOM
 
+### Section 7: React Events
+- Useless Note Taker - Intro To React Events
+- Events Part 2
 
