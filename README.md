@@ -79,4 +79,4 @@ Updating the Capstone Project to have multiple profiles using props.
 - React Forms
 
 ### Section 9: Ajax Requests & Lifecycle Methods
-- 
+- Ajax Requests & The Fetch API
