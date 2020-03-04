@@ -1,0 +1,87 @@
+<!-- Insert Boiler Plate Code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- REACT LIBRARY -->
+  <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+  <!-- REACT DOM LIBRARY -->
+  <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+  <!-- BABEL LIBRARY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+  <title>Dinner Time</title>
+</head>
+<body>
+  <!-- Designated Location To Insert React Content -->
+<div id="app">React has not rendered yet</div>
+
+  <!-- JavaScript -->
+  <script type="text/babel">
+
+    // CREATE A CLASS COMPONENT FOR DinnerVote
+    class DinnerVote extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          votes: 0
+        }
+        this.onButtonLike = this.onButtonLike.bind(this);
+        this.onButtonDislike = this.onButtonDislike.bind(this);
+      }
+      onButtonLike() {
+        this.setState({
+          votes: this.state.votes += 1
+        })
+      }
+      onButtonDislike() {
+        this.setState({
+          votes: this.state.votes -= 1
+        })
+      }
+      render() {
+        var dinnerVoteStyle = {
+          // From FriendLy
+          display: "inline-block",
+          textAlign: "center",
+          margin: 20,
+          height: 500,
+          width: 300,
+          padding: 0,
+          backgroundColor: "#FFF",
+          WebkitFilter: "drop-shadow(0px 0px 5px #555)",
+          filter: "drop-shadow(0px 0px 5px #555)"
+        }
+
+        var foodStyle = {
+          marginTop: 20,
+          width: 200,
+          height: 200,
+        }
+        return(
+          <div style={dinnerVoteStyle}>
+            <img src={this.props.img} alt="food image" style={foodStyle}/>
+            <h1>Dinner Time</h1>
+            <p>Vote Here If You Want This</p>
+            <button onClick={this.onButtonLike}>+1</button>
+            <p>Vote Here If You Do Not Want This</p>
+            <button onClick={this.onButtonDislike}>-1</button>
+            <p>Total: {this.state.votes}</p>
+          </div>
+        );
+      }
+    }
+  
+    ReactDOM.render(
+      <div>
+        <DinnerVote img="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg?w=1155&h=1528"/>
+        <DinnerVote img="https://www.thesun.co.uk/wp-content/uploads/2019/12/Iceland_15PartyBundle_Lifestyle.png"/>
+        <DinnerVote img="https://cdn.psychologytoday.com/sites/default/files/field_blog_entry_images/2019-06/howcuttingdo.jpg"/>
+      </div>,
+      document.getElementById("app")
+    );
+
+  </script>
+</body>
+</html>
