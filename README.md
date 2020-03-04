@@ -69,3 +69,6 @@ Updating the Capstone Project to have multiple profiles using props.
 - Useless Note Taker - Intro To React Events
 - Events Part 2
 
+### Section 8: This & Bind
+- This & Bind Lecture
+- This & Bind Lab
